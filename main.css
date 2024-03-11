@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+h1{
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h3{
+    font-style: obliques;
+}
+
+body>header {
+    background-color: brown !important;
+    padding: 5px 0;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+
+}
+
+header li a:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+    transition: transform 0.0, 1s ease;
+    box-shadow: 2px 2px 2px;
+}
+
+
+header li a {
+    color: #fffdfd;
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+    text-align: justify;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+section h2 {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding: 16px 0;
+
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    word-spacing: 5px;
+    font-variant:small-caps;
+}
+
+.articles article a {
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: lighter;
+
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+    transition: transform 0.0, 1s ease;
+    box-shadow: 3px 3px 3px rgb(83, 21, 21);
+}
+
+.articles article p .articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#populares #recentes #lançamentos #rifas {
+    background-color: rgba(197, 195, 195, 0.486);
+}
+
+
+* {
+    scrollbar-width: inherit;
+    scrollbar-color: rgb(83, 21, 21) rgb(165, 42, 42);
+}
+
+
+
+.articles article {
+    transition: transform 0.3s ease;
+}
+
+
+.articles article:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 27px rgba(255, 0, 0, 0.3);
+}
+
+
+.articles article p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.articles article {
+    padding: 6px;
+}
+
+.box-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(165, 42, 42);
+    color: #fbf9f6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(83, 21, 21);
+}
+
+body{
+    background-color: beige;
+    margin-top:20px;
+}
+
+.box{
+    max-width: 800px;
+    margin: 2% auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.266);
+    text-align: left;
+}
+
+#h2anu{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+/*
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img{
+    width: 100%;
+}
+
+.overlay-img-link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.395);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .4s;
+}
+
+.overlay-img-link a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-img-link{
+    opacity: 1;
+    
+}
+*/
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    max-height: 58%;
+    text-decoration: none;
+}
+
+ul li img{
+    width: 100%;
+}
+
+
+#marca, form textarea{
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+form textarea{
+    resize: none;
+    height: 100px;
+    width: 765px;
+}
+
+h4{
+    font-size: 13px;
+    font-style: oblique;
+}
+
+#divModelo {
+    display: none;
+}
+#divModelo label {
+    font-size: 20px;
+}
+#divModelo select {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#divAno {
+    display: none;
+}
+
+#divAno label {
+    font-size: 20px;
+}
+
+#divAno select {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#divMotor {
+    display: none;
+}
+
+#divMotor label {
+    font-size: 20px;
+}
+
+#divMotor select {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#divKilometragem {
+    display: none;
+}
+
+#divKilometragem label {
+    font-size: 20px;
+}
+
+#divKilometragem input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0); 
+}
+
+#fotos{
+    flex-wrap: wrap;
+
+}
+

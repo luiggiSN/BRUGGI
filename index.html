@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRUGGI</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,300&family=Oswald&display=swap"rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>BRUGGI</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <button type="submit" id="Turbos" >Turbos</button>
+                    </li>
+                    <li>
+                        <button type="submit" id="Aspirados">Aspirados</button>
+                    </li>
+                    <li>
+                        <button type="submit" id="lançamentos">Arrancada</button>
+                    </li>
+                    <li>
+                        <button type="submit" id="rifas">Trackday</button>
+                    </li>
+                    <li>
+                        <button type="submit" id="Publique" onclick="redirecionarParaPublique()" >Publique</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="populares">
+        <div class="container">
+            <br /><br /><br /><br />
+            <h2>━ Anuncios mais populares ━</h2>
+            <div class="articles">
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/caravan_borra.jpg" alt="caravan fazendo borrachão" />
+                        <time>USD 60.000</time>
+                        <h3>Caravan do Alemao</h3>
+                        <p>
+                            500wph 60kg de torque, motor forjado no calor do nordeste e montado pelo ayrton senna
+                        </p>
+                        <a href="#" a></a>
+                </article>
+                </article>
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/acf.png" alt="subaru impreza sti saindo de ladinho na praia" />
+                        <header>
+                            <time>USD 35.000</time>
+                        </header>
+                        <h3>Subaru STI 2.5t ACF</h3>
+                        <p>
+                            Um dos subarus mais moidos do Brasil. De cavalo de pau na praia ate rally no barro,
+                            exatamente para oque foi concebido e ainda com aquela pimentinha debaixo do capo.
+                        </p>
+                        <a href="#"></a>
+                </article>
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/landau.jpg" title="landau em posiçao de ataque" />
+                        <header>
+                            <time>USD 9.000</time>
+                        </header>
+                        <h3>Landau Diesel</h3>
+                        <p>
+                            Conseguiram deixar essa banheira economica e usavel no dia a dia, usando um motor de MWM
+                            Sprint 6.07 TCA BITURBO e MANUAL
+                        </p>
+                        <a href="#"></a>
+                </article>
+            </div>
+    </section>
+    <section id="recentes">
+        <div class="container">
+            <h2>━ Anuncios mais recentes ━</h2>
+            <br />
+            <div class="articles">
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/caravangringos.jpg" alt="alemao da caravan aterrorizando gringos" />
+                        <header>
+                            <time>USD 20.000</time>
+                        </header>
+                        <h3>Corvette do head of petróleo</h3>
+                        <p>
+                            Quinta feira a noite e a cadeira eletrica berrando na av.europa, pode ser sua.
+                        </p>
+                        <a href="#"></a>
+                </article>
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/1m99.jpg " alt="1m do giu" />
+                        <header>
+                            <time>USD 50.000</time>
+                        </header>
+                        <h3>BMW 1M 99PROBLEMS</h3>
+                        <p>
+                            A verdade é que esse carro consegue engolir tudo que está em sua frente, um verdadeiro
+                            buraco "negro", a BMW 1M mais rapida das américas!
+                        </p>
+                        <a href="#"></a>
+                </article>
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/de_lado.jpg.jpg" alt="Extração de petróleo" />
+                        <header>
+                            <time>USD 5.000</time>
+                        </header>
+                        <h3>Iarinha</h3>
+                        <p>
+                            eu vou te comprar de volta
+                        </p>
+                        <a href="#"></a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="lançamentos">
+        <div class="container">
+            <h2>━ Lançamentos 0km ━</h2>
+            <div class="articles">
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/montanars.jpg" alt="montana branca" />
+                        <time>USD 30.000</time>
+                        <h3>Nova sucessora da S10 SS? Nova montana rs 1.2T 12V flex</h3>
+                        <p>
+                            Chevrolet lança essa tracker com caçamba na esperança de pegar os viuvos da saudosa S10 SS,
+                            com seus incriveis 133cv potecia com +1
+                            sentado no banco do motorista
+                        </p>
+                        <a href="#"></a>
+                </article>
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/eclipse.jpg" alt="montana branca" />
+                        <time>USD 32.000</time>
+                        <h3>Novo eclipse cross: rush, serie limitada</h3>
+                        <p>
+                            Mitsubishi lança a versão RUSH do hatch méd... digo SUV com apenas 150 unidades, sendo até
+                            agora a versão mais bonita desde a mudança drastica.
+                        </p>
+                        <a href="#"></a>
+                </article>
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/duster.jpg" alt="montana branca" />
+                        <time>USD 25.000</time>
+                        <h3>Renault aventureiro com cvt?</h3>
+                        <p>
+                            Acaba de ser lançada a nova versão do querido suv médio do brasileiros e romenos, DUSTER
+                            ICONIC PLUS 1.3T CVT, isso mesmo pegaram um carro
+                            com aspiração aventureira e meteramlhe um motor turbo e cambio cvt..
+                        </p>
+                        <a href="#"></a>
+                </article>
+    </section>
+    <section id="rifas">
+        <div class="container">
+            <h2>━ Rifas ━</h2>
+            <div class="articles">
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/astra.jpg" alt="montana branca" />
+                        <time>30/02/2024</time>
+                        <h3>GM ASTRA 2.0 16V O aspirado forte do petrolhead</h3>
+                        <a href="#"></a>
+                </article>
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/fuca.jpg" alt="montana branca" />
+                        <time>17/03/2024</time>
+                        <h3>FUSCA BAJA RALLY DOS SERTÕES</h3>
+                        <p>
+                        </p>
+                        <a href="#"></a>
+                </article>
+                <article>
+                    <a href="#" class="box-link">
+                        <img src="./imagens/puma.jpg" alt="montana branca" />
+                        <time>17/04/2024</time>
+                        <h3>PUMA GT 1600 1972</h3>
+                        <p>
+                        </p>
+                        <a href="#"></a>
+                </article>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

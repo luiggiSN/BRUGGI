@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anúncios</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,300&family=Oswald&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>BRUGGI</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <button type="submit" id="Turbos">Turbos</button>
+                    </li>
+                    <li>
+                        <button type="submit" id="Aspirados">Aspirados</button>
+                    </li>
+                    <li>
+                        <button type="submit" id="lançamentos">Arrancada</button>
+                    </li>
+                    <li>
+                        <button type="submit" id="rifas">Trackday</button>
+                    </li>
+                    <li>
+                        <button type="submit" id="Publique" onclick="redirecionarParaPublique()">Publique</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h2 id="h2anu" style="padding-top: 50px;">Vamo começar seu anúncio?</h2>
+    <div class="box">
+        <h4>Campos com asterisco (*) são obrigatórios</h4>
+        <form>
+            <div>
+                <label style="font-size: 20px;" for="marca">Marca*</label>
+                <select id="marca" name="marca" onchange="carregarModelos()" required>
+                    <option value="">Escolha uma marca</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Mitsubishi">Mitsubishi</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="BMW">BMW</option>
+                    <option value="AUDI">AUDI</option>
+                    <option value="Alfa">ALFA ROMEO</option>
+                    <option value="Citroen">Citroën</option>
+                    <option value="Mercedes">Mercedes-Benz</option>
+                    <option value="KIA">KIA</option>
+                    <option value="Subaru">Subaru</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="jeep">Jeep</option>
+                    <option value="Land">Land Rover</option>
+                    <option value="Dodge">Dodge</option>
+                    <option value="RAM">Ram</option>
+                </select>
+            </div>
+
+
+            <div id="divModelo" style="display: none;">
+                <label style="font-size: 20px;" for="modelo">Modelo*</label>
+                <select id="modelo" name="modelo">
+
+                </select>
+            </div>
+
+            <div id="divAno" style="display: none;">
+                <label style="font-size: 20px;" for="ano">Ano do Modelo*</label>
+                <select id="ano" name="ano">
+
+                </select>
+            </div>
+            <div id="divMotor" style="display: none;">
+                <label style="font-size: 20px;" for="motor">Motor*</label>
+                <select id="motor" name="motor">
+
+                </select>
+            </div>
+
+            <div id="divKilometragem" style="display: none;">
+                <label style="font-size: 20px;" for="kilometragem">Quilometragem*</label>
+                <input type="text" id="kilometragem" name="kilometragem">
+            </div>
+
+            <div>
+                <label style="font-size: 20px;" for="cor">Cor*</label>
+                <select id="marca" name="cor" onchange="carregarCor()" required>
+                    <option value="">Escolha uma cor</option>
+                    <option value="Amarelo">Amarelo</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Bege">Bege</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Cinza">Cinza</option>
+                    <option value="Dourado">Dourado</option>
+                    <option value="Indefinida">Indefinida</option>
+                    <option value="Laranja">Laranja</option>
+                    <option value="Marrom">Marrom</option>
+                    <option value="Prata">Prata</option>
+                    <option value="Preto">Preto</option>
+                    <option value="Rosa">Rosa</option>
+                    <option value="Roxo">Roxo</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Vermelho">Vermelho</option>
+                    <option value="Vinho">Vinho</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Aqui voce pode falar um pouco mais sobre os diferenciais do seu carro</h3>
+                <form>
+                    <div>
+                        <textarea placeholder="Digite aqui" required></textarea>
+                </form>
+            </div>
+    </div>
+    </form>
+    <div>
+        <form>
+            <h2>Inserir nova imagem</h2>
+            <input type="url" id="end-img-new" required placeholder="Endereco da imagem" />
+            <button type="submit">Adicionar</button>
+        </form>
+        <form id="uploadForm">
+            <input type="file" id="uploadInput" accept="image/*" multiple>
+            <button type="submit">Enviar</button>
+        </form>
+        <ul id="fotos"></ul>
+        </ul>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
