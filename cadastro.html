@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Bruggi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,300&family=Oswald&display=swap">
+    <link rel="stylesheet" href="./cadastro.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>BRUGGI</h1>
+            <div class="hamb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="index.html">Destaque</a>
+                    </li>
+                    <li>
+                        <a href="#">Mais recentes</a>
+                    </li>
+                    <li>
+                        <a href="#">Mais vistos</a>
+                    </li>
+                    <li>
+                        <a href="publique.html">Publique</a>
+                    </li>
+                    <li>
+                        <a href="Sobre.html">Sobre nos</a>
+                    </li>
+                    <li>
+                        <a href="cadastro.html">Minha Conta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h2 id="h2c">Vamos criar sua conta?</h2>
+    <div class="box">
+        <h4 style="color: gray;" >Campos com asterisco (*) são obrigatórios</h4>
+        <form>
+            <div class="form-campo">
+                <label style="font-size: 20px;" for="nome">Nome Completo*</label>
+                <input style="font-size: 15px;" type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+
+            <div class="form-campo">
+                <label style="font-size: 20px;" for="email">E-mail*</label>
+                <input style="font-size: 15px;" type="email" id="email" name="email" placeholder="Seu e-mail" required/>
+            </div>
+
+            <div class="form-campo">
+                <label style="font-size: 20px;" for="telefone">Insira o seu telefone*</label>
+                <input style="font-size: 15px;" type="tel" id="telefone" name="telefone" required />
+            </div>
+
+            <div class="form-campo">
+                <label style="font-size: 20px;" for="cpf">Insira o seu cpf*</label>
+                <input style="font-size: 15px;" type="text" id="cpf" name="cpf" required />
+            </div>
+
+            <div class="form-campo">
+                <label style="font-size: 20px;" for="cep">Insira o seu cep*</label>
+                <input style="font-size: 15px;" type="text" id="cep" name="cep" required />
+            </div>
+
+            <div class="form-campo">
+                <label style="font-size: 20px;" for="endereço">Endereço Completo*</label>
+                <input style="font-size: 15px;" type="text" id="endereço" name="endereço" placeholder="Seu endereço" required />
+            </div>
+
+            <div class="form-campo">
+                <label style="font-size: 20px;" for="senha">Senha*</label>
+                <input style="font-size: 15px;" type="password" id="senha" name="senha" placeholder="Sua senha" required />
+            </div>
+
+            <div class="form-campo">
+                <label style="font-size: 20px;" for="confirmarSenha">Confirme sua Senha*</label>
+                <input style="font-size: 15px;" type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua Senha" required />
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="container"></div>
+        <p>
+            &copy; BRUGGI - Todos os direitos reservados - 2024
+        </p>
+    </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    scrollbar-width: inherit;
+    scrollbar-color: rgb(133, 42, 42) rgb(187, 0, 0);
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(187, 0, 0);
+    padding-top: 16px;
+    color: rgb(247, 227, 201);
+}
+
+header>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    flex-direction: row-reverse;
+}
+
+header h1 {
+    text-align: center;
+    flex: 1;
+    margin-left: 25%;
+}
+
+nav {
+    background-color:brown;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    position: absolute; 
+    top: 100; 
+    width: 70%; 
+    max-width: 300px; 
+    z-index: 1000; 
+}
+
+nav li {
+    list-style: none;
+    display: block;
+    margin-right: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    margin-top: 0px;
+    margin-left: 4%;
+    margin: 0;
+    padding: 16px;
+    background-color: brown;
+}
+
+nav li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+nav li a {
+    color: beige;
+    text-decoration: none;
+}
+
+.hamb {
+    width: 32px;
+    cursor: pointer;
+    position: relative;
+    margin-left: -30%;
+    margin-top: 10px;
+}
+
+.hamb span {
+    height: 2px;
+    width: 100%;
+    background-color: beige;
+    display: block;
+    margin-bottom: 8px;
+    border-radius: 9px;
+    cursor: pointer;
+    left: 10%;
+}
+
+
+
+
+
+
+
+
+
+body {
+    background-color: beige;
+}
+
+.box {
+    max-width: 800px;
+    margin: 2% auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.266);
+    text-align: left;
+}
+
+
+#marca,
+form textarea {
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+    width: 765px;
+}
+
+
+ul {
+    
+    flex-wrap: wrap;
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+    max-height: 58%;
+    text-decoration: none;
+}
+
+ul li img {
+    width: 100%;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+section h2 {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#h2anu {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3 {
+    font-style: obliques;
+}
+
+h4 {
+    font-size: 13px;
+    font-style: oblique;
+}
+
+
+
+
+
+
+#divModelo {
+    display: none;
+}
+
+#divModelo label {
+    font-size: 20px;
+}
+
+#divModelo select {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#divAno {
+    display: none;
+}
+
+#divAno label {
+    font-size: 20px;
+}
+
+#divAno select {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#divMotor {
+    display: none;
+}
+
+#divMotor label {
+    font-size: 20px;
+}
+
+#divMotor select {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#divKilometragem {
+    display: none;
+}
+
+#divKilometragem label {
+    font-size: 20px;
+}
+
+#divKilometragem input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#divprice {
+    display: none;
+}
+
+#divprice label {
+    font-size: 20px;
+}
+
+#divprice input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#divend-img-new {
+    display: none;
+}
+
+#divend-img-new label {
+    font-size: 20px;
+}
+
+#divend-img-new input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    width: 765px;
+    margin-top: 5px;
+    margin-bottom: 2%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid transparent #ccc;
+    border-radius: 10px;
+    outline-color: rgb(255, 0, 0);
+}
+
+#fotos {
+    flex-wrap: wrap;
+
+}
+
+footer {
+    background-color: rgb(187, 0, 0);
+    color: aliceblue;
+    padding: 20px;
+    padding-bottom: 38px;
+    text-align: center;
+}
+
+
+
+button{
+    background-color: rgb(165, 42, 42);
+    color: #fbf9f6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 120px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: rgb(83, 21, 21);  
+}
+
